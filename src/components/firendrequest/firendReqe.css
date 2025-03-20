@@ -1,4 +1,4 @@
-.request{
+.request {
     background: var(--color-card);
     margin-top: 1rem;
     padding: 14px;
@@ -8,10 +8,12 @@
     gap: 0.7rem;
     flex-direction: column;
 }
-.request h4{
-    font: size 0.9rem;
+
+.request h4 {
+    font-size: 0.91rem;
 }
-.request.action{
+
+.request .action {
     display: flex;
     align-items: center;
     gap: 5px;

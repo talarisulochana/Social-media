@@ -1,6 +1,6 @@
 .rightBar{
     height:calc(100vh -3.6rem) ;
-    position:sticky ;
+    position:relative ;
     top: 3.6rem;
     overflow: auto;
 }

@@ -1,11 +1,9 @@
 import React from 'react'
-
-const Home = () => {
+import Stories from "../../components/stories/Stories"
+export default function Home() {
   return (
-    <div>
-      Home
-    </div>
+    <>
+    {/* <Stories/> */}
+    </>
   )
 }
-
-export default Home
