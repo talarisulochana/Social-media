@@ -1,31 +1,85 @@
-.stories{
+.stories {
     display: flex;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.story{
+
+.story {
     height: 170px;
-    flex:1;
+    flex: 1;
     overflow: hidden;
     position: relative;
     user-select: none;
     border-radius: 0.5rem;
-
 }
-.story::after{
+
+.story::after {
     position: absolute;
     content: '';
     height: 100%;
     width: 100%;
     bottom: 0;
-    background:linear-gradient(transparent,transparent,var(--color-primary)) ;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
 }
 
-.story.user{
+.story .user {
     position: absolute;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
     border: 2px dashed var(--color-primary);
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.story .user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.story > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.story h5 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.userStory {
+    margin-right: 10px;
+}
+
+.userStory label {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    font-size: 1.2rem;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    padding: 7px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userStory label input {
+    display: none;
 }

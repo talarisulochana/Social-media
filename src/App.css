@@ -88,16 +88,27 @@ small,p{
     background:var(--color-red);
     color:white;
 }
-main{
+
+
+main {
     display: grid;
-    grid-template-columns: 20% 54% 23% ;
+    grid-template-columns: 20% 54% 23%; 
     gap: 3%;
     width: 100%;
-
-}
-
-
-
+  }
+  
+  .leftbar {
+    grid-column: 1; 
+  }
+  
+  .container {
+    grid-column: 2; 
+  }
+  
+  .rightbar {
+    grid-column: 3;
+ }
+  
 
 
 
