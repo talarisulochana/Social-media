@@ -1,62 +1,84 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import Login from "../Pages/LOGIN/Login";
-import SignUp from "../Pages/SIGN/Sign";
-import Home from "../Pages/Home/Home";
-import Profile from "../Pages/profile/Profile";
-import Chatbox from "../Pages/chatbox/Chatbox";
 
 
-import Nav from '../components/nav/Nav'
-import LeftBar from '../components/leftbar/LeftBar'
-import RightBar from '../components/rightbar/RightBar'
+const Login = lazy(() => import("../Pages/LOGIN/Login"));
+const SignUp = lazy(() => import("../Pages/SIGN/Sign"));
+const Home = lazy(() => import("../Pages/Home/Home"));
+const Profile = lazy(() => import("../Pages/profile/Profile"));
+const Chatbox = lazy(() => import("../Pages/chatbox/Chatbox"));
+const Nav = lazy(() => import("../components/nav/Nav"));
+const LeftBar = lazy(() => import("../components/leftbar/LeftBar"));
+const RightBar = lazy(() => import("../components/rightbar/RightBar"));
 
-
-export default function LayOut() {
-const Feed = () => {
+const Layout = () => {
   return (
     <>
-    <Nav/>
-    <main>
-      <LeftBar/>
-      <div className="container">
-        <Outlet />
-      </div>
-      <RightBar/>
-    </main>
+      <Nav />
+      <main>
+        <LeftBar />
+        <div className="container">
+          <Outlet />
+        </div>
+        <RightBar />
+      </main>
     </>
   );
 };
 
+const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Login />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/",
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Layout />
+      </Suspense>
+    ),
+    children: [
+      {
+        path: "/",
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Home />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/profile/:id",
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Profile />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/chatbox/:id",
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Chatbox />
+          </Suspense>
+        ),
+      },
+    ],
+  },
+  {
+    path: "/signup",
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <SignUp />
+      </Suspense>
+    ),
+  },
+]);
 
-  const router = createBrowserRouter([
-    {
-      path: "/login",
-      element: <Login />,
-    },
-    {
-      path: "/",
-      element: <Feed />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/profile/:id",
-          element: <Profile />,
-        },
-        {
-          path: "/chatbox/:id",
-          element: <Chatbox />,
-        },
-      ],
-    },
-    {
-      path: "/signup",
-      element: <SignUp />,
-    },
-  ]);
-
+export default function AppRouter() {
   return <RouterProvider router={router} />;
 }
