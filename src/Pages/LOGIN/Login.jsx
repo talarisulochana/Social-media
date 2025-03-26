@@ -1,36 +1,14 @@
-import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
-import "./Login.css";
+import '../LOGIN/Login.css';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Login() {
-  const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-  const handleLogin = async (e) => {
-    e.preventDefault(); 
-
-    try {
-      const response = await fetch("http://localhost:5185/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        navigate("/LayOut"); 
-      } else {
-        setError(data.message || "Invalid credentials!");
-      }
-    } catch (error) {
-      console.error("Login failed:", error);
-      setError("Server error. Please try again later.");
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Login Attempt:', { username, password });
   };
 
   return (
@@ -39,7 +17,8 @@ export default function Login() {
         <div className="left">
           <h2>Social-X Login</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequuntur nemo incidunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            consequuntur nemo incidunt.
           </p>
           <span>Don't Have An Account?</span>
           <Link to="/signup">
@@ -47,8 +26,7 @@ export default function Login() {
           </Link>
         </div>
 
-        <form className="right" onSubmit={handleLogin}>
-          {error && <p className="error">{error}</p>}
+        <form className="right" onSubmit={handleSubmit}>
           <input
             type="text"
             required
@@ -63,11 +41,9 @@ export default function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit" className="btn">Login</button>
+          <button type="submit" className="btn btn-primary">Login</button>
         </form>
       </div>
     </div>
   );
 }
-
-
