@@ -1,21 +1,26 @@
-.comments{
+ .comments {
     width: 100%;
     background: var(--color-bg);
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     display: flex;
+    flex-direction: column;
     gap: 1rem;
-    margin: 1 rem 0;
+    margin: 1rem 0;
 }
-.comments .writebox{
+
+.comments .writebox {
     width: 100%;
+    display: flex;  
     justify-content: space-between;
 }
-.comments.writebox input{
+
+.comments .writebox input {
     width: 100%;
     background: transparent;
-    border: 1px soild var(--color-soft);
+    border: 1px solid var(--color-soft);
     padding: 10px;
-    border-radius: .5rem;
-    color:var(--color-text)
+    border-radius: 0.5rem;
+    color: var(--color-text);
 }
+

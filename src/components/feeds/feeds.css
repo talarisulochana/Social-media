@@ -1,35 +1,77 @@
- .feeds{
+.feeds {
     display: flex;
     align-items: center;
-    gap: 30px;
     flex-direction: column;
+    gap: 30px;
     margin-top: 30px;
 }
-.feed{
+
+
+.feed {
     padding: 20px;
-    border-radius: .5rem;
+    border-radius: 8px;
     background: var(--color-card);
     width: 100%;
+    max-width: 600px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.feed .top-content{
+
+
+.feed .top-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
-
 }
-.feed  p{
+
+.feed .user {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 10px;
+}
+
+.feed .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feed .menu-icon {
+    cursor: pointer;
+}
+.feed p {
     margin-bottom: 1rem;
 }
-.feed .mid-content img{
+
+.feed .mid-content img {
+    max-width: 100%;
     max-height: 480px;
-    border-radius: .5rem;
-    aspect-ratio: 1/1;
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
 }
-.feed .bottom-content{
+
+.feed .bottom-content {
     display: flex;
     align-items: center;
     gap: 20px;
     margin: 1rem 0;
-} 
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.action-item:hover {
+    color: var(--color-primary);
+}
+
 

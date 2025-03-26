@@ -1,30 +1,61 @@
-import { Link } from 'react-router-dom'
-import './Sign.css'
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import "./Sign.css";
 
 export default function SignUp() {
-    return (
+    const navigate = useNavigate();
+    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-        <div className='signup'>
+    const handleSignUp = (e) => {
+        e.preventDefault();
+
+        
+        if (username && email && password) {
+            alert("Account created successfully! Redirecting to Login...");
+            navigate("/login"); 
+        } else {
+            alert("Please fill all fields.");
+        }
+    };
+
+    return (
+        <div className="signup">
             <div className="card">
                 <div className="left">
                     <h2>Social-X SignUp</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Consectetur consequuntur
-                        nemo incidunt. Mollitia, iure suscipit.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <span> Have An Account?</span>
                     <Link to='/login'>
-                    <button className="btn btn-primary">Login</button>
+                        <button className="btn btn-primary">Login</button>
                     </Link>
-                   
                 </div>
-                <form className="right">
-                    <input type="text" required placeholder="username" />
-                    <input type="email" required placeholder="email" />
-                    <input type="password" required placeholder="password" />
-                    <button type="submit" className='btn'>SignUp</button>
+                <form className="right" onSubmit={handleSignUp}>
+                    <input 
+                        type="text" 
+                        required 
+                        placeholder="Username" 
+                        value={username} 
+                        onChange={(e) => setUsername(e.target.value)} 
+                    />
+                    <input 
+                        type="email" 
+                        required 
+                        placeholder="Email" 
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)} 
+                    />
+                    <input 
+                        type="password" 
+                        required 
+                        placeholder="Password" 
+                        value={password} 
+                        onChange={(e) => setPassword(e.target.value)} 
+                    />
+                    <button type="submit" className='btn'>Sign Up</button>
                 </form>
             </div>
         </div>
-    )
+    );
 }

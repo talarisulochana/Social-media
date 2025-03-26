@@ -1,52 +1,42 @@
-import './feeds.css'
-import {Link} from 'react-router-dom'
+import './feeds.css';
+import { Link } from 'react-router-dom';
+import Comments from '../comments/Comments';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment, faHeart, faEllipsisH, faShare } from '@fortawesome/free-solid-svg-icons';
 
-import Comments from '../comments/Comments'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComment, faHeart, faListDots, faShare } from '@fortawesome/free-solid-svg-icons'
-
-
-
-export default function Feed({fed}) {
+export default function Feed({ fed }) {
   return (
-    <div className='feed' key={fed.userid}>
+    <div className="feed">
+      
       <div className="top-content">
-        <Link to='/profile/id'>
-
-        <div className="user">
-            <img src={fed.feedProfile} alt="" />
-            <div>
+        <Link to={`/profile/${fed.userid}`} className="user">
+          <img src={fed.feedProfile} alt="User Profile" />
+          <div>
             <h5>{fed.name}</h5>
-            <small>1 Minutes Ago</small>
-
-            </div>
-        </div>
+            <small>1 Minute Ago</small>
+          </div>
         </Link>
-        <span><FontAwesomeIcon icon={faListDots}/></span>
+        <span className="menu-icon"><FontAwesomeIcon icon={faEllipsisH} /></span>
       </div>
       <div className="mid-content">
         <p>{fed.desc}</p>
-        <img src={fed.feedImage} alt="" />
+        {fed.feedImage && <img src={fed.feedImage} alt="Feed" />}
       </div>
       <div className="bottom-content">
         <div className="action-item">
-            <span><FontAwesomeIcon icon={faHeart}/>14 Like</span>
+          <FontAwesomeIcon icon={faHeart} /> <span>14 Likes</span>
         </div>
         <div className="action-item">
-            <span><FontAwesomeIcon icon={faComment}/>2 Comment</span>
+          <FontAwesomeIcon icon={faComment} /> <span>2 Comments</span>
         </div>
-
         <div className="action-item">
-            <span><FontAwesomeIcon icon={faShare}/>1 Share</span>
+          <FontAwesomeIcon icon={faShare} /> <span>1 Share</span>
         </div>
-
       </div>
-
-{ <Comments/>}
+      <Comments />
     </div>
-  )
+  );
 }
 
 
