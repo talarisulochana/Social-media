@@ -5,13 +5,13 @@ import Comment2 from '../assets/img/FeedProfile12.jpg';
 const Comments =[
     {
         id: 1, 
-        name: 'Dodo Vincey',
+        name: 'Ravi',
         commentProfile: Comment1,
         CommeText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
     },     
     {
         id: 2, 
-        name: 'David Milar',
+        name: 'Nikha',
         commentProfile:Comment2,
         CommeText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
     }, 

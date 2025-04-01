@@ -7,25 +7,25 @@ import FirendImage4 from '../assets/img/FirendReq3.jpg'
 const Firends =[
     {
         id: 1,
-        name: 'Anna Loise',
+        name: 'Pavani',
         img: FirendImage1,
         info: ' 4 mutual Following',
     },
     {
         id: 2,
-        name: 'Eva Gacorai',
+        name: 'Pallavi',
         img: FirendImage2,
         info: ' 4 mutual Following',
     },
     {
         id: 3,
-        name: 'Anny Joly',
+        name: 'Mounika',
         img: FirendImage3,
         info: ' 4 mutual Following',
     },
     {
         id: 4,
-        name: 'Prince Adam',
+        name: 'Siva',
         img: FirendImage4,
         info: ' 4 mutual Following',
     },

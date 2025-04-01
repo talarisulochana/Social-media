@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
-
 const Login = lazy(() => import("../Pages/LOGIN/Login"));
 const SignUp = lazy(() => import("../Pages/SIGN/Sign"));
 const Home = lazy(() => import("../Pages/Home/Home"));
@@ -26,11 +25,12 @@ const Layout = () => {
   );
 };
 
+
 const router = createBrowserRouter([
   {
     path: "/login",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="spinner">Loading...</div>}>
         <Login />
       </Suspense>
     ),
@@ -38,15 +38,15 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="spinner">Loading...</div>}>
         <Layout />
       </Suspense>
     ),
     children: [
       {
-        path: "/",
+        index: true,
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className="spinner">Loading...</div>}>
             <Home />
           </Suspense>
         ),
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
       {
         path: "/profile/:id",
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className="spinner">Loading...</div>}>
             <Profile />
           </Suspense>
         ),
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
       {
         path: "/chatbox/:id",
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className="spinner">Loading...</div>}>
             <Chatbox />
           </Suspense>
         ),
@@ -72,7 +72,7 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="spinner">Loading...</div>}>
         <SignUp />
       </Suspense>
     ),
@@ -80,5 +80,11 @@ const router = createBrowserRouter([
 ]);
 
 export default function AppRouter() {
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<div className="spinner">Loading...</div>}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
+
+

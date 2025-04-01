@@ -4,7 +4,7 @@ import CoverPhoto from '../assets/img/CoverPhotos.jpg';
 const CurrentUser = [
     {
         id: 'me',
-        name : 'Beg Joker',
+        name : 'Sri Ram',
         username: '@thebegjoker',
         ProfieImage: ProfieImage,
         CoverPhoto: CoverPhoto
@@ -12,3 +12,5 @@ const CurrentUser = [
 ];
 
 export default CurrentUser;
+
+

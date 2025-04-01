@@ -31,15 +31,24 @@ const Feeds =[
     {
         id: 1,
         userid: 1,
-        name: 'Lana White',
+        name: 'Kavitha',
         feedImage: FeedImage1,
         feedProfile: feedProfile1,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
     },
     {
+        id: 2,
+        userid: 2,
+        name: 'Abhi',
+        feedImage: FeedImage2,
+        feedProfile: feedProfile2,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+    },
+
+    {
         id: 3,
         userid: 3,
-        name: 'Dodo Vincey',
+        name: 'Mohini',
         feedImage: FeedImage3,
         feedProfile: feedProfile3,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
@@ -47,7 +56,7 @@ const Feeds =[
     {
         id: 4,
         userid: 4,
-        name: 'Emaly Shea',
+        name: 'Vineela',
         feedImage: FeedImage4,
         feedProfile: feedProfile4,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
@@ -55,7 +64,7 @@ const Feeds =[
     {
         id: 5,
         userid: 5,
-        name: 'Fatema Anny',
+        name: 'Teju',
         feedImage: FeedImage5,
         feedProfile: feedProfile5,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
@@ -63,7 +72,7 @@ const Feeds =[
     {
         id: 6,
         userid: 6,
-        name: 'Evrahim Alli',
+        name: 'Raju',
         feedImage: FeedImage6,
         feedProfile: feedProfile6,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
@@ -71,7 +80,7 @@ const Feeds =[
     {
         id: 7,
         userid: 7,
-        name: 'Mohammed Nabi',
+        name: 'Sunil',
         feedImage: FeedImage7,
         feedProfile: feedProfile7,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
@@ -79,15 +88,24 @@ const Feeds =[
     {
         id: 8,
         userid: 8,
-        name: 'Ema Cliopetra',
+        name: 'Akhila',
         feedImage: FeedImage8,
         feedProfile: feedProfile8,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
-    },  
+    }, 
+    
+    {
+        id: 9,
+        userid: 9,
+        name: 'Banu',
+        feedImage: FeedImage9,
+        feedProfile: feedProfile9,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+    },
     {
         id: 10,
         userid: 10,
-        name: 'Muskan Khan',
+        name: 'Vani',
         feedImage: FeedImage10,
         feedProfile: feedProfile10,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
@@ -95,7 +113,7 @@ const Feeds =[
     {
         id: 11,
         userid: 11,
-        name: 'Nuva Akhi',
+        name: 'Meghana',
         feedImage: FeedImage11,
         feedProfile: feedProfile11,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
@@ -111,7 +129,7 @@ const Feeds =[
     {
         id: 13,
         userid: 13,
-        name: 'Malkova Williams',
+        name: 'Vijaya',
         feedImage: FeedImage13,
         feedProfile: feedProfile13,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
