@@ -11,31 +11,31 @@ const Messages = [
         id: 1,
         name: 'Sri',
         img: MeessageImage1,
-        mText: 'Good morning! Have a great day ahead!'
+        mText: 'Good morning!'
     },
     {
         id: 2,
         name: 'Venu',
         img: MeessageImage2,
-        mText: 'Hope you’re doing well. Let’s catch up soon!'
+        mText: 'Hope you’re doing well.'
     },
     {
         id: 3,
         name: 'Naresh',
         img: MeessageImage3,
-        mText: 'Keep smiling! Life is beautiful.'
+        mText: 'Keep smiling!'
     },
     {
         id: 4,
         name: 'Pujitha',
         img: MeessageImage4,
-        mText: 'Just checking in to say hello!'
+        mText: ' hello!'
     },
     {
         id: 5,
         name: 'Tahaseen',
         img: MeessageImage5,
-        mText: 'Stay positive and keep moving forward!'
+        mText: ' keep moving forward!'
     },
 ];
 

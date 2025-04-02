@@ -1,4 +1,4 @@
-.Message {
+ /* .Message {
     background: var(--color-card);
     margin: 20px auto;
     border-radius: 1rem;
@@ -84,4 +84,140 @@
     font-size: 0.9rem;
     margin: 2px 0 0;
     color: gray;
+}  */
+
+
+.Message {
+    background: var(--color-card);
+    margin: 20px auto;
+    border-radius: 1rem;
+    padding: 14px;
+    max-width: 500px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+
+.message-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.message-top h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.message-search {
+    background: var(--color-bg);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-border);
+}
+
+.message-search input {
+    background: transparent;
+    color: var(--color-text);
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.message-search input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.border-div {
+    width: 100%;
+    height: 1px;
+    background: var(--color-border);
+    margin-bottom: 20px;
+}
+
+
+.message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 0.8rem;
+    transition: background 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.message:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.user-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-primary);
+}
+
+
+.green-active {
+    height: 12px;
+    width: 12px;
+    background: var(--color-primary);
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    border-radius: 50%;
+    border: 2px solid var(--color-card);
+}
+
+.message-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.message-body h5 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.message-body p {
+    font-size: 0.9rem;
+    margin: 2px 0 0;
+    color: gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+
+.message-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-message {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    font-size: 1rem;
+}
+
+
+
+
