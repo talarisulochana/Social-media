@@ -27,14 +27,14 @@ import FeedImage11 from '../assets/img/feed11.jpg'
 import FeedImage12 from '../assets/img/feed12.jpg'
 import FeedImage13 from '../assets/img/feed13.jpg'
 
-const Feeds =[
+const Feeds = [
     {
         id: 1,
         userid: 1,
         name: 'Kavitha',
         feedImage: FeedImage1,
         feedProfile: feedProfile1,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Enjoying a peaceful morning with my coffee!'
     },
     {
         id: 2,
@@ -42,16 +42,15 @@ const Feeds =[
         name: 'Abhi',
         feedImage: FeedImage2,
         feedProfile: feedProfile2,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Wishing everyone a fantastic day ahead!'
     },
-
     {
         id: 3,
         userid: 3,
         name: 'Mohini',
         feedImage: FeedImage3,
         feedProfile: feedProfile3,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Always keep smiling and stay positive!'
     },
     {
         id: 4,
@@ -59,7 +58,7 @@ const Feeds =[
         name: 'Vineela',
         feedImage: FeedImage4,
         feedProfile: feedProfile4,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Excited for what’s coming next!'
     },
     {
         id: 5,
@@ -67,7 +66,7 @@ const Feeds =[
         name: 'Teju',
         feedImage: FeedImage5,
         feedProfile: feedProfile5,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Chasing dreams, one step at a time!'
     },
     {
         id: 6,
@@ -75,7 +74,7 @@ const Feeds =[
         name: 'Raju',
         feedImage: FeedImage6,
         feedProfile: feedProfile6,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Life is an adventure, enjoy the ride!'
     },
     {
         id: 7,
@@ -83,7 +82,7 @@ const Feeds =[
         name: 'Sunil',
         feedImage: FeedImage7,
         feedProfile: feedProfile7,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'A little progress each day adds up to big results.'
     },
     {
         id: 8,
@@ -91,16 +90,15 @@ const Feeds =[
         name: 'Akhila',
         feedImage: FeedImage8,
         feedProfile: feedProfile8,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Happiness is homemade!'
     }, 
-    
     {
         id: 9,
         userid: 9,
         name: 'Banu',
         feedImage: FeedImage9,
         feedProfile: feedProfile9,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Sunshine mixed with a little bit of happiness!'
     },
     {
         id: 10,
@@ -108,7 +106,7 @@ const Feeds =[
         name: 'Vani',
         feedImage: FeedImage10,
         feedProfile: feedProfile10,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Collecting memories, not things!'
     },
     {
         id: 11,
@@ -116,7 +114,7 @@ const Feeds =[
         name: 'Meghana',
         feedImage: FeedImage11,
         feedProfile: feedProfile11,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Do what makes your soul shine!'
     },
     {
         id: 12,
@@ -124,7 +122,7 @@ const Feeds =[
         name: 'David Milar',
         feedImage: FeedImage12,
         feedProfile: feedProfile12,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Believe in yourself and you’re halfway there.'
     },
     {
         id: 13,
@@ -132,7 +130,7 @@ const Feeds =[
         name: 'Vijaya',
         feedImage: FeedImage13,
         feedProfile: feedProfile13,
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        desc: 'Dream big, work hard, stay focused!'
     },
 ];
 

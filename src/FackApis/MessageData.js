@@ -6,38 +6,42 @@ import MeessageImage4 from '../assets/img/MessageProfile5.jpg'
 import MeessageImage5 from '../assets/img/MessageProfile6.jpg'
 
 
-const Messages =[
+const Messages = [
     {
         id: 1,
         name: 'Sri',
         img: MeessageImage1,
-        mText: 'Lorem ipsum dolor sit amet.'
+        mText: 'Good morning! Have a great day ahead!'
     },
     {
         id: 2,
         name: 'Venu',
         img: MeessageImage2,
-        mText: 'Lorem ipsum dolor sit amet.'
+        mText: 'Hope you’re doing well. Let’s catch up soon!'
     },
     {
         id: 3,
         name: 'Naresh',
         img: MeessageImage3,
-        mText: 'Lorem ipsum dolor sit amet.'
+        mText: 'Keep smiling! Life is beautiful.'
     },
     {
         id: 4,
         name: 'Pujitha',
         img: MeessageImage4,
-        mText: 'Lorem ipsum dolor sit amet.'
+        mText: 'Just checking in to say hello!'
     },
     {
         id: 5,
         name: 'Tahaseen',
         img: MeessageImage5,
-        mText: 'Lorem ipsum dolor sit amet.'
+        mText: 'Stay positive and keep moving forward!'
     },
 ];
 
-
 export default Messages;
+
+
+
+
+

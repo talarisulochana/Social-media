@@ -5,17 +5,19 @@ import Comment2 from '../assets/img/FeedProfile12.jpg';
 const Comments =[
     {
         id: 1, 
-        name: 'Ravi',
+        name: 'Nikha',
         commentProfile: Comment1,
-        CommeText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        CommeText: 'She enjoys reading books before going to bed.'
     },     
     {
         id: 2, 
-        name: 'Nikha',
+        name: 'Ravi',
         commentProfile:Comment2,
-        CommeText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        CommeText: 'The sun rises in the east and sets in the west.'
     }, 
 ]
 
 
 export default Comments;
+
+
