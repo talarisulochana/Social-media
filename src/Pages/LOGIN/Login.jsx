@@ -1,14 +1,16 @@
+import React, { useState } from 'react';
 import '../LOGIN/Login.css';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 
-export default function Login() {
+const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Login Attempt:', { username, password });
+    
+    navigate('/');
   };
 
   return (
@@ -16,34 +18,34 @@ export default function Login() {
       <div className="card">
         <div className="left">
           <h2>Social-X Login</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            consequuntur nemo incidunt.
-          </p>
-          <span>Don't Have An Account?</span>
+          <p>Please enter your credentials to login.</p>
+          <span>Don't have an account? Register here</span>
           <Link to="/signup">
-            <button className="btn btn-primary">Register</button>
+            <button className="btn btn-primary">Sign Up</button>
           </Link>
         </div>
-
-        <form className="right" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            required
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <input
-            type="password"
-            required
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit" className="btn btn-primary">Login</button>
-        </form>
+        <div className="right">
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <button type="submit" className="btn">Login</button>
+          </form>
+        </div>
       </div>
     </div>
   );
-}
+};
+
+export default Login;

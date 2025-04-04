@@ -74,6 +74,21 @@
     color: var(--color-primary);
     margin: 2rem;
 }
+.signup .card .left .btn-secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 10px 20px;
+    border-radius: 1rem;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.signup .card .left .btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
 
 
 @media screen and (max-width: 424px) {

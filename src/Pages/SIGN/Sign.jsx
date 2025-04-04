@@ -11,13 +11,19 @@ export default function SignUp() {
     const handleSignUp = (e) => {
         e.preventDefault();
 
-        
         if (username && email && password) {
+           
             alert("Account created successfully! Redirecting to Login...");
-            navigate("/login"); 
+
+            navigate("/login");
         } else {
             alert("Please fill all fields.");
         }
+    };
+
+    const handleGuestLogin = () => {
+        alert("Continuing as Guest...");
+        navigate("/"); 
     };
 
     return (
@@ -25,35 +31,41 @@ export default function SignUp() {
             <div className="card">
                 <div className="left">
                     <h2>Social-X SignUp</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <span> Have An Account?</span>
-                    <Link to='/login'>
+                    <p>Please enter your credentials to SignUp.</p>
+                    <span>Have an account?</span>
+                    <Link to="/login">
                         <button className="btn btn-primary">Login</button>
                     </Link>
+                    <button className="btn btn-secondary" onClick={handleGuestLogin}>
+                        Continue as Guest
+                    </button>
                 </div>
+
                 <form className="right" onSubmit={handleSignUp}>
-                    <input 
-                        type="text" 
-                        required 
-                        placeholder="Username" 
-                        value={username} 
-                        onChange={(e) => setUsername(e.target.value)} 
+                    <input
+                        type="text"
+                        required
+                        placeholder="Username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
                     />
-                    <input 
-                        type="email" 
-                        required 
-                        placeholder="Email" 
-                        value={email} 
-                        onChange={(e) => setEmail(e.target.value)} 
+                    <input
+                        type="email"
+                        required
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                     />
-                    <input 
-                        type="password" 
-                        required 
-                        placeholder="Password" 
-                        value={password} 
-                        onChange={(e) => setPassword(e.target.value)} 
+                    <input
+                        type="password"
+                        required
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                     />
-                    <button type="submit" className='btn'>Sign Up</button>
+                    <button type="submit" className="btn">
+                        Sign Up
+                    </button>
                 </form>
             </div>
         </div>
