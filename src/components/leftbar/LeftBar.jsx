@@ -22,6 +22,7 @@ const shortcutItems = [
     { id: 7, name: 'Message', icon: Message, path: '/chatbox/id' },
 ];
 
+
 export default function LeftBar() {
     const user = CurrentUser[0]; 
 

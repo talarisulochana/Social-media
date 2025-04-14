@@ -37,7 +37,7 @@ export default function SignUp() {
                         <button className="btn btn-primary">Login</button>
                     </Link>
                     <button className="btn btn-secondary" onClick={handleGuestLogin}>
-                        Continue as Guest
+                         Guest Login
                     </button>
                 </div>
 
