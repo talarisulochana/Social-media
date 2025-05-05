@@ -10,7 +10,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    navigate('/');
+    navigate('/home');
   };
 
   return (
@@ -20,7 +20,7 @@ const Login = () => {
           <h2>Social-X Login</h2>
           <p>Please enter your credentials to login.</p>
           <span>Don't have an account? Register here</span>
-          <Link to="/signup">
+          <Link to="/">
             <button className="btn btn-primary">Sign Up</button>
           </Link>
         </div>

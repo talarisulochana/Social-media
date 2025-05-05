@@ -10,16 +10,16 @@ import Videos from '../../assets/icon/6.png';
 import Message from '../../assets/icon/7.png';
 
 const menuItems = [
-    { id: 1, name: 'Friends', icon: Friend, path: '/' },
-    { id: 2, name: 'Groups', icon: Groups, path: '/' },
-    { id: 3, name: 'Market', icon: Market, path: '/' },
-    { id: 4, name: 'Watch', icon: Watch, path: '/' },
+    { id: 1, name: 'Friends', icon: Friend, path: '/home' },
+    { id: 2, name: 'Groups', icon: Groups, path: '/home' },
+    { id: 3, name: 'Market', icon: Market, path: '/home' },
+    { id: 4, name: 'Watch', icon: Watch, path: '/home' },
 ];
 
 const shortcutItems = [
-    { id: 5, name: 'Gallery', icon: Gallery, path: '/' },
-    { id: 6, name: 'Videos', icon: Videos, path: '/' },
-    { id: 7, name: 'Message', icon: Message, path: '/chatbox/id' },
+    { id: 5, name: 'Gallery', icon: Gallery, path: '/home' },
+    { id: 6, name: 'Videos', icon: Videos, path: '/home' },
+    { id: 7, name: 'Message', icon: Message, path: '/home/chatbox/id' },
 ];
 
 
@@ -30,7 +30,7 @@ export default function LeftBar() {
         <div className='leftBar'>
             <div className="left-container">
                 <div className="menu">
-                    <Link to={`/profile/${user?.id}`}>
+                    <Link to={`/home/profile/${user?.id}`}>
                         <div className="user">
                             <img src={user?.ProfieImage} alt="User Profile" />
                             <h4>{user?.name}</h4>

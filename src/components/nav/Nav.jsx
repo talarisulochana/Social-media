@@ -13,13 +13,13 @@ export default function Nav(){
         <nav>
             <div className="nav-container">
               <div className="nav-left">
-        <Link to='/'>
+        <Link to='/home'>
         <h3 className='logo'>Social-X</h3>
         </Link>
-        <Link to='/'>
+        <Link to='/home'>
         <FontAwesomeIcon icon={faHome}/>
         </Link>
-        <Link to='/profile/id'>
+        <Link to='/home/profile/id'>
         <FontAwesomeIcon icon={faUser}/>
         </Link>
         <div className="Nav-Searchbar">
@@ -28,15 +28,15 @@ export default function Nav(){
         </div>
                 </div>  
                 <div className="nav-right">
-                <Link to='/chatbox/id'>
+                <Link to='/home/chatbox/id'>
                 <FontAwesomeIcon icon={faEnvelope}/>
                 </Link>
 
-                <Link to='/'>
+                <Link to='/home'>
                 <FontAwesomeIcon icon={faBell}/>
                 </Link>
 <DarkMoode/>
-                <Link to='/'>
+                <Link to='/home'>
                 <FontAwesomeIcon icon={faBars}/>
                 </Link>
 

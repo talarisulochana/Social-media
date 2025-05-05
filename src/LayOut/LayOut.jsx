@@ -36,7 +36,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/",
+    path: "/home",
     element: (
       <Suspense fallback={<div className="spinner">Loading...</div>}>
         <Layout />
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/profile/:id",
+        path: "/home/profile/:id",
         element: (
           <Suspense fallback={<div className="spinner">Loading...</div>}>
             <Profile />
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/chatbox/:id",
+        path: "/home/chatbox/:id",
         element: (
           <Suspense fallback={<div className="spinner">Loading...</div>}>
             <Chatbox />
@@ -70,7 +70,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/signup",
+    path: "/",
     element: (
       <Suspense fallback={<div className="spinner">Loading...</div>}>
         <SignUp />

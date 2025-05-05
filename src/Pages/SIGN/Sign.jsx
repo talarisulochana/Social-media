@@ -23,7 +23,7 @@ export default function SignUp() {
 
     const handleGuestLogin = () => {
         alert("Continuing as Guest...");
-        navigate("/"); 
+        navigate("/home"); 
     };
 
     return (
